@@ -17,5 +17,7 @@ namespace BLAGA_ANEMONA_LAB2.Data
         public DbSet<BLAGA_ANEMONA_LAB2.Models.Book> Book { get; set; } = default!;
 
         public DbSet<BLAGA_ANEMONA_LAB2.Models.Publisher> Publisher { get; set; }
+
+        public DbSet<BLAGA_ANEMONA_LAB2.Models.Category> Category { get; set; }
     }
 }

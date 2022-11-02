@@ -4,6 +4,7 @@ using BLAGA_ANEMONA_LAB2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BLAGA_ANEMONA_LAB2.Migrations
 {
     [DbContext(typeof(BLAGA_ANEMONA_LAB2Context))]
-    partial class BLAGA_ANEMONA_LAB2ContextModelSnapshot : ModelSnapshot
+    [Migration("20221102142341_BookCategory")]
+    partial class BookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
